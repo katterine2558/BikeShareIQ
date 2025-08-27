@@ -50,16 +50,19 @@ cyclecast/
 ```bash
 git clone https://github.com/<tu-usuario>/<tu-repo>.git
 cd <tu-repo>
-
+```
 2) **Crea y activa un entorno virtual**
-
+```bash
 python -m venv .venv
 source .venv/bin/activate
-
+```
 3) **Instala dependencias**
+```bash
 pip install -r requirements.txt
 # Si no tienes requirements.txt, usa:
 # pip install pandas scikit-learn matplotlib seaborn ydata-profiling
-
+```
 4) **Ubica el dataset**
+``` bash
 Coloca tu CSV en data/ (por ejemplo: data/bike_sharing.csv).
+```
