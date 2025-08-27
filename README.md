@@ -43,13 +43,23 @@ cyclecast/
 └─ README.md
 
 ## ⚙️ Reproducir
-1) Crea y activa un entorno:
-```bash
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
 
-📈 Resultados (test)
-Métrica	Regresión Polinómica (g3)	Lasso (α=1)
-RMSE	129.84	137.43
-MAE	94.87	101.59
-R²	0.497	0.437
+> Requisitos: **Python 3.10+** y `git`. El dataset no está incluido.
+
+1) **Clona el repo**
+```bash
+git clone https://github.com/<tu-usuario>/<tu-repo>.git
+cd <tu-repo>
+
+2) **Crea y activa un entorno virtual**
+
+python -m venv .venv
+source .venv/bin/activate
+
+3) **Instala dependencias**
+pip install -r requirements.txt
+# Si no tienes requirements.txt, usa:
+# pip install pandas scikit-learn matplotlib seaborn ydata-profiling
+
+4) **Ubica el dataset**
+Coloca tu CSV en data/ (por ejemplo: data/bike_sharing.csv).
