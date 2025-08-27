@@ -41,7 +41,7 @@ cyclecast/
 │  └─ train_poly.py
 ├─ requirements.txt
 └─ README.md
-
+````
 ## ⚙️ Reproducir
 
 > Requisitos: **Python 3.10+** y `git`. El dataset no está incluido.
