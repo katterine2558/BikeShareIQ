@@ -27,3 +27,27 @@
 ---
 
 ## 📂 Estructura sugerida
+cyclecast/
+├─ data/ # dataset (no incluido)
+├─ notebooks/
+│ └─ PML-Proyecto-PT1_V2.ipynb
+├─ reports/
+│ └─ PML-Proyecto-PT1_V2.html
+├─ src/
+│ ├─ features.py
+│ ├─ train_lasso.py
+│ └─ train_poly.py
+├─ requirements.txt
+└─ README.md
+
+## ⚙️ Reproducir
+1) Crea y activa un entorno:
+```bash
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+
+📈 Resultados (test)
+Métrica	Regresión Polinómica (g3)	Lasso (α=1)
+RMSE	129.84	137.43
+MAE	94.87	101.59
+R²	0.497	0.437
