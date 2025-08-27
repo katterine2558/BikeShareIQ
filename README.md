@@ -30,7 +30,7 @@
 
 ```text
 cyclecast/
-├─ data/                     # dataset (no incluido)
+├─ data/                     
 ├─ notebooks/
 │  └─ PML-Proyecto-PT1_V2.ipynb
 ├─ reports/
