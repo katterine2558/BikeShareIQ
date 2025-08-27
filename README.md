@@ -27,16 +27,18 @@
 ---
 
 ## 📂 Estructura sugerida
+
+```text
 cyclecast/
-├─ data/ # dataset (no incluido)
+├─ data/                     # dataset (no incluido)
 ├─ notebooks/
-│ └─ PML-Proyecto-PT1_V2.ipynb
+│  └─ PML-Proyecto-PT1_V2.ipynb
 ├─ reports/
-│ └─ PML-Proyecto-PT1_V2.html
+│  └─ PML-Proyecto-PT1_V2.html
 ├─ src/
-│ ├─ features.py
-│ ├─ train_lasso.py
-│ └─ train_poly.py
+│  ├─ features.py
+│  ├─ train_lasso.py
+│  └─ train_poly.py
 ├─ requirements.txt
 └─ README.md
 
