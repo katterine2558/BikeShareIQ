@@ -66,3 +66,8 @@ pip install -r requirements.txt
 ``` bash
 Coloca tu CSV en data/ (por ejemplo: data/bike_sharing.csv).
 ```
+5) **Ejecuta el notebook**
+
+```bash
+python -m notebook
+```
