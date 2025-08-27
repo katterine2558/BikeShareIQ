@@ -1,2 +1,29 @@
-# BikeShareIQ
-Predicción interpretable de la demanda en un sistema de bicicletas compartidas usando Regresión Polinómica (grado 3) y Lasso. Incluye EDA, limpieza, split reproducible 80/20, comparación de métricas (RMSE/MAE/R²) y análisis de coeficientes para explicar los factores que más pesan (clima, calendario, hora del día)
+# 🚴‍♀️ CycleCast — Bike-Share Demand Forecasting (EDA → PolyReg → Lasso)
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-orange)
+![Made with Jupyter](https://img.shields.io/badge/Made%20with-Jupyter-9cf)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+> Predicción **interpretable** de la demanda de bicicletas compartidas a partir de clima, calendario y hora del día. Pipeline completo: **EDA → limpieza → modelado (Regresión Polinómica grado 3 & Lasso) → evaluación → interpretabilidad**.
+
+---
+
+## ✨ TL;DR
+- Dos enfoques de regresión (Polinómica g3 y Lasso) para estimar la variable objetivo `cnt` (demanda).  
+- Incluye reporte de EDA, división reproducible train/test, métricas (RMSE/MAE/R²) y análisis de coeficientes para explicar los factores que más pesan en la predicción.
+
+---
+
+## 🧠 ¿Qué hay aquí?
+- **EDA**: perfilamiento con reporte HTML; duplicados, correlaciones (`temp`↔`atemp`), valores atípicos en `hum` y chequeo de categorías (`weekday`, `weathersit`).  
+- **Preprocesamiento**: eliminación de duplicados, dummies para categóricas, features de **franja horaria** (`time_of_day`), etc.
+- **Modelos**: 
+  - **Regresión Polinómica (grado 3)** como baseline no lineal.
+  - **Lasso** para regularizar y **seleccionar variables** (coeficientes exactos en cero).
+- **Evaluación**: RMSE / MAE / R² (tabla comparativa).
+- **Interpretabilidad (Lasso)**: importancia de `temp`/`atemp`, efecto negativo de `hum`, categorías útiles en `weathersit`, y propuesta de simplificar `weekday` a **fin de semana vs. día hábil**.
+
+---
+
+## 📂 Estructura sugerida
